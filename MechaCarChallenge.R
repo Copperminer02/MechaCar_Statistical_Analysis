@@ -19,5 +19,21 @@ mpg_mulr_reg <- lm (mpg ~vehicle_length+vehicle_weight+spoiler_angle+ground_clea
 
 summary(mpg_mulr_reg)
 
-#Deliverable 2. 
+#Deliverable 2. Summary Statistics on Suspension Coils
+
+#Read Suspension_Coil.csv file from Resources Folder
+
+Suspension_Coil <- read.csv(file="Resources/Suspension_Coil.csv")
+
+#Examine Suspension_Coil dataframe
+head(Suspension_Coil)
+
+#create total summary dataframe to hole Mean, Median, Variance and SD for PSI Column
+
+total_summary <- summarize(Suspension_Coil,Mean=mean(PSI), Median = median(PSI), Variance =var(PSI), SD = sd(PSI))
+
+# create summary statistics grouped by lot 
+
+lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% 
+  summarize(Mean=mean(PSI), Median = median(PSI), Variance =var(PSI), SD = sd(PSI))
 
