@@ -45,6 +45,7 @@ t.test(Suspension_Coil$"PSI", mu = 1500)
 # T-Test by lot 
 coil_lots <- unique(Suspension_Coil$Manufacturing_Lot)
 
-for (lot in coil_lots){
-  print(t.test((subset(Suspension_Coil$PSI,Suspension_Coil$Manufacturing_Lot== lot)), mu =1500))
+for (lots in coil_lots){
+  print(lots)
+  print(t.test(subset(Suspension_Coil,Manufacturing_Lot== lots)$PSI, mu = 1500))
 }
