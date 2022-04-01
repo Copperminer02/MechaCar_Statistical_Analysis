@@ -54,25 +54,25 @@ Again assuming a significance factor of 0.05%, t-tests were run on ALL PLANT and
 
 ![image](https://user-images.githubusercontent.com/91850824/160261994-f8f4aa70-1dbc-4d6e-a44a-736fba5793a9.png)
 
-The P-Value is 0.0603, greater than 0.05.  THe NUll Hypothesis stands, and in general all plants are close to the desired distribution; however, it is very close to 0.05, and the confidence interval shows what we saw above, some coils are trending more lower (1497.51 versus 1500.053 Upper range) than the 1500 population mean.
+The P-Value is 0.0603, greater than 0.05.  THe NUll Hypothesis stands, and in general all plants are close to the desired distribution; however, it is very close to 0.05.
 
 **Lot 1:**
 
 ![image](https://user-images.githubusercontent.com/91850824/160261995-93a5318b-354c-451d-83e5-56aea7705371.png)
 
-P-Value is equal to 1, this plant appears to be running ideally, and we accept the null hypothesis that the mean is eaqual to the 1500 psi. 
+P-Value is equal to 1, this plant appears to be running ideally, and we accept the null hypothesis that the mean is equal to the 1500 psi. 
 
 **Lot 2:**
 
 ![image](https://user-images.githubusercontent.com/91850824/160261996-ba7306a5-7bde-4e71-8763-cd132c899268.png)
 
-P value for lot 2 eqauls 0.6072.  Again, it is much higher than our 0.05 and we accept the null hypothesis for the plant.  Plant 2 appears to be building coils higher than standard.  Looking at the the confidence interval; the higher range (1500.977) is 0.5 psi higher than the lower range.  This indicates a skew right, higher than the mean.
+P value for lot 2 eqauls 0.6072.  Again, it is much higher than our 0.05 and we accept the null hypothesis for the plant.  Plant 2 appears to be building coils higher than standard.  
 
 **Lot 3:**
 
 ![image](https://user-images.githubusercontent.com/91850824/160261998-0b7ac6aa-d6ea-42fc-b16f-3c6ddfb89c3f.png)
 
-In contrast Lot 3's p-value = 0.04; below our 0.05 and we must reject the null hypothesis. We can state that the distribution for Lot 3 is different than population mean and is making an out of spec product.  Both Upper and Lower bounds of the confidence interval are below 1500 poulation mean.
+In contrast Lot 3's p-value = 0.04; below our 0.05 and we must reject the null hypothesis. We can state that the distribution for Lot 3 is different than population mean and is making an out of spec product.  
 
 ## Study Design: MechaCar vs Competition
 There are many metrics we could explore: HP, fuel efficiency (city and highway), maintenance costs, etc.  Comparing directly to a competitor, any of the distributions of these metrics could be compared individually across manufacturers with a **one-way ANOVA** test.
