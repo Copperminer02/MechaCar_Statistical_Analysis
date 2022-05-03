@@ -4,7 +4,7 @@
 
 MechaCars has requested a statistical analysis of their MPG and Suspension Coil datasets.  
   1. What design Metrics (vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance) are statistically siginificant to predict MPG from the test results of 50 prototype MechCars.
-  2. Run Summary Statistics on tested Suspension Coil weight capacity\ies (PSI) across production lots to check for consistent quality.
+  2. Run Summary Statistics on tested Suspension Coil weight capacities (PSI) across production lots to check for consistent quality.
   3. Determine if the manufacturing lots (individually and in total) are statistically different from the population mean of 1,500 psi.
   4. Design statistical test that could be used compare MechCar vehicle performance compared to other manufacturers.
   
